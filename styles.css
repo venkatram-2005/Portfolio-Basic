@@ -1,0 +1,179 @@
+/* Mobile Styles */
+#hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+        color: #fff;
+    }
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+header h1 {
+    font-family:'Times New Roman', Times, serif ;
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 2rem 1rem;
+    margin: 1rem 0;
+    background: #fff;
+    border-radius: 10px;
+}
+
+section h2 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+#about {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#about div {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+#about img {
+    display: block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skills-container > div {
+    flex: 1 1 200px;
+    margin: 10px;
+    padding: 15px;
+    background: #e0f7fa;
+    border-radius: 10px;
+}
+
+.skills-container h3 {
+    text-align: center;
+    color: #00796b;
+}
+
+.internships {
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.internship {
+    margin-bottom: 1rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background: #2c3e50;
+    color: #fff;
+}
+
+/* Animation Classes */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.skill-bar {
+    background-color: #e0f7fa;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.skill-level {
+    background-color: #4ca1af;
+    height: 10px;
+    border-radius: 5px;
+}
+
+#scrollToTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #4ca1af;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+#scrollToTop:hover {
+    background-color: #2c3e50;
+}
+
